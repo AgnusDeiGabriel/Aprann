@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ht">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f1226">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Aprann Kode</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="logo" id="homeBtn" type="button">
+      <span class="logo-icon">&lt;/&gt;</span>
+      <span class="logo-text">Aprann Kode</span>
+    </button>
+    <div class="stats">
+      <span class="level" id="levelLabel">Nivo 1</span>
+      <div class="xpbar"><div id="xpFill"></div></div>
+      <span class="xp" id="xpLabel">0 XP</span>
+    </div>
+    <div class="lang" role="group" aria-label="Lang / Langue">
+      <button type="button" data-lang="ht">Kreyòl</button>
+      <button type="button" data-lang="fr">Français</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true"></div>
+  <canvas id="confetti"></canvas>
+
+  <!-- Leson yo, mwa pa mwa / les leçons, mois par mois -->
+  <script src="lessons/common.js"></script>
+  <script src="lessons/html.js"></script>
+  <script src="lessons/css.js"></script>
+  <script src="lessons/js-month2.js"></script>
+  <script src="lessons/js-month3.js"></script>
+  <script src="lessons/cs-month4.js"></script>
+  <script src="lessons/cs-month5.js"></script>
+  <script src="lessons/cs-month6.js"></script>
+  <script src="lessons/cs-month7.js"></script>
+  <script src="lessons/cs-month8.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
